@@ -1,3 +1,55 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.header {
+    display: flex;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav {
+    margin-left: auto;
+}
+
+.nav li  {
+    list-style: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.hero {
+background: #fe8c00; /* fallback for old browsers */
+background: -webkit-linear-gradient(210deg, #fe8c00 , #f83600); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(210deg, #fe8c00 , #f83600);
+padding: 100px 0;
+}
+
+.headingContainer {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .headingContainer {
+        width: 90%;
+    }
+}
+
+.hero h1 {
+    color: $text-secondary;
+}
+
+.hero p {
+    font-size: 1.3em;   
+    margin-top: -20px;
+    color: $text-secondary;
+}
+
