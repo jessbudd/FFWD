@@ -53,3 +53,8 @@ padding: 100px 0;
     color: $text-secondary;
 }
 
+@media screen and (max-width: 400px) {
+    .hero p {
+        font-size: 1em;   
+    }
+}
