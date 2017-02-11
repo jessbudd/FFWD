@@ -4,4 +4,26 @@
 
 .footer {
     text-align: center;
+    
+    
+}
+.footerWidgetsWrapper {
+
+    // background: $brand-color;
+    // color: $text-secondary;
+    padding: 10px 20px;
+}
+
+.footerWidget {
+    width: 300px;
+    // display: inline-block;
+    text-align: left;
+}
+
+.footerWidget h3 {
+    font-size: 1rem;
+}
+.footerWidget p {
+    font-size: 1rem;
+
 }

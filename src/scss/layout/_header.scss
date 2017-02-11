@@ -2,59 +2,56 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
+/*
+ * Navigation styles 
+ */
 .header {
     display: flex;
+    margin: 0 auto;
 }
 
 .logo img {
-    width: 200px;
+    width: 180px;
+    margin: 0 10px;
 }
 
-.header {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 .nav {
     margin-left: auto;
+    margin-right: 10px;
+    width: 100%;
 }
 
+// nav items
 .nav li  {
     list-style: none;
     padding: 10px 15px;
     display: inline-block;
+    color: $brand-color;
 }
 
-.hero {
-background: #fe8c00; /* fallback for old browsers */
-background: -webkit-linear-gradient(210deg, #fe8c00 , #f83600); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(210deg, #fe8c00 , #f83600);
-padding: 100px 0;
-}
-
-.headingContainer {
-    width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-@media screen and (max-width: 700px) {
-    .headingContainer {
-        width: 90%;
+@media screen and (max-width: 600px) {
+    .nav li  {
+        padding-right: 55px;
+        display: block;
     }
 }
+.nav li a {
+    color: $text-primary;
+    font-weight: normal;
+    padding-bottom: 5px;
+    
+    transition: .2s;
 
-.hero h1 {
-    color: $text-secondary;
-}
-
-.hero p {
-    font-size: 1.3em;   
-    margin-top: -20px;
-    color: $text-secondary;
-}
-
-@media screen and (max-width: 400px) {
-    .hero p {
-        font-size: 1em;   
+    &:hover {
+        color: $brand-color;
+        // border-bottom: 2px solid $brand-color;
     }
+}
+// the active page nav link
+.nav li a.active {
+    border-bottom: 2px solid $brand-color;
+    
+    color: $brand-color;
+    // text-transform: uppercase;
+
 }

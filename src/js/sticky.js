@@ -11,7 +11,7 @@ $('.menu-left a').on('click', function() {
   $('.menu-left').removeClass('collapse');
 });
 
-// Hide Header on on scroll down
+// Hide Header on scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -26,7 +26,7 @@ setInterval(function() {
         hasScrolled();
         didScroll = false;
     }
-}, 250);
+}, 350);
 
 function hasScrolled() {
     var st = $(this).scrollTop();
